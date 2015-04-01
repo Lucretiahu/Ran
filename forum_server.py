@@ -166,7 +166,7 @@ class ConfigHandler(tornado.web.RequestHandler):
             res = update_icon(uid, icon)
         elif action == 'pwd':
             newPwd = self.get_argument('new')
-            res = update_icon(newPwd, uid)
+            res = update_pwd(newPwd, uid)
         if res == 1:
             warning = 'updata success'
         else:
